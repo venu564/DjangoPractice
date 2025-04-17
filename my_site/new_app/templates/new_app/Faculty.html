@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block  base %}
+    <h1> Faculty of GEC </h1>
+
+    <ul>
+        {% for faculty in faculty %}
+        <li>
+            {{faculty.fname}}
+        </li>
+        {% endfor %}
+    <ul>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+{% block home %}
+<center>
+    <h2>Apply Your Leaves here</h2>
+</center>
+<div class = 'container'>
+<form action="" method="POST">
+    {% csrf_token %}
+    {% for field in form %}
+    <br>
+    <div class='mb-3'>    
+    {{field.label_tag}}
+    </div>
+    {{field}}
+    <br>
+    {% endfor %}
+    <br>
+    <button type="submit" class="btn btn-primary">Apply Leave</button>
+</form>
+</div>
+{% endblock  %}

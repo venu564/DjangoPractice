@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   <center> 
+    <div class="container">
+        <h1>Welcome to the School</h1>
+    </div>
+    <div  style="text-align: center;">
+        
+        <ul center>
+            <li> <a href = {% url 'classroom:thank_you' %}>Log out</li>
+            <li> <a href = {% url 'classroom:contact' %}>Contact View</li>
+            <li> <a href = {% url 'classroom:create' %}>Create New Teacher</li>
+            <li> <a href = {% url 'classroom:list' %}>Teacher's List</li>
+        <ul>
+      
+        </div>
+</center>
+</body>
+</html>

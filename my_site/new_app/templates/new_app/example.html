@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block  base %}
+<div>
+    <h1>Welcome to Django Template Tutorial Mr. {{ lname }} from {{addr.country | upper }}!!</h1>
+    <h2>Please verify your primary contact number in the records: {{contact.1}}</h2>
+    <ul>
+    {% for num in  contact%}
+    {% if num|length == 10 %}
+        <li>Phone Number {{ num }} is Valid</li>
+    {% else %}
+        <li>Phone Number {{ num  }} is Invalid</li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+<a href="{% url 'new_app:thankyou' %}">Logout</a>
+</div>
+{% endblock %}

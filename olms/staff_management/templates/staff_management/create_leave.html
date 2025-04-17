@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% block home %}
+<center>
+    <h1> Create Leave Profile for the Staff </h1>
+</center>
+<div class = "container">
+<form action = "" method="POST">
+    {%csrf_token%}
+    {% for field in form %}
+        <div class='mb-3'>
+            {{field.label_tag}}
+        </div>
+        {{field}}
+    {% endfor %}
+    <button type="submit" class="btn btn-primary">Create Leaves</button>
+</form>
+</div>
+{% endblock %}

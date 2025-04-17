@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% block home %}
+<center>
+    <h2>Delete the Staff Member</h2>
+</center>
+<br><br>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="row mb-3">
+      <label for="fname" class="col-sm-2 col-form-label">Staff Id</label><br>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="staff_id", name = "staff_id">
+      </div>
+    </div>
+    <br><br>
+    <button type="submit" class="btn btn-primary">Delete</button>
+</form>
+{% endblock  %}

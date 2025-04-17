@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+
+{% block  base %}
+    <h1>Thank You! Visit Again!</h1>
+    <a href = "{% url 'new_app:example' %}">APP HOME</a>
+    <br/>
+    <a href = "{% url 'home' %}">Website Home Page</a>
+{% endblock  %}

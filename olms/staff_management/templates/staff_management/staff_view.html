@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block home %}
+<center>
+    <h2>View the Staff Details</h2>
+    
+    <ul>
+        {% for staff in faculty %}
+        <center>
+        <li>
+            <h3>{{staff.fname}} {{staff.lname}}</h3>
+        </li>
+        </center>
+        {% endfor %}
+    </ul>
+</center>
+{% endblock  %}

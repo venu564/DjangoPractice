@@ -1,0 +1,12 @@
+<center>
+    <h1> List of Teachers </h1>
+    <ul>
+        {% for teacher in teachers_list %}
+        <li><a href = "/classroom/teacher_detail/{{teacher.id}}">{{teacher.first_name}} {{teacher.last_name}}</li>
+            <ul>
+                <li><a href = "/classroom/update/{{teacher.id}}">Update the details of {{teacher.first_name}}</li>
+                <li><a href = "/classroom/delete/{{teacher.id}}">Delete the details of {{teacher.first_name}}</li>
+            </ul>
+        {% endfor %}
+    </ul>
+</center>
